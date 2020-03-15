@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form basic</title>
+    <style>
+    	body {font-size:12px;}
+    	table {margin-bottom:20px;border-collapse: collapse;}
+        th {background-color: #f9f9f9;}
+        th,td {padding:5px 15px;border:1px solid #ccc;}
+        button {
+            height:30px;
+            width:100px;
+        }
+    </style>
+</head>
+
+<body>
+	<form action="mSignUp.jsp" method="get"><!-- action 에 연결될 JSP 이름 작성 -->
+	    <table>
+	        <tbody>
+	            <tr>
+	                <th>이름</th>
+	                <td><input name="m_name"></td>
+	            </tr>
+	            <tr>
+	                <th>비밀번호</th>
+	                <td><input type="password" name="m_password"></td>
+	            </tr>
+	            <tr>
+	                <th>성별</th>
+	                <td>
+	                    <label for=""><input type="radio" name="m_gender" value="male">남성</label>
+	                    <label for=""><input type="radio" name="m_gender" value="female">여성</label>
+	                </td>
+	            </tr>
+	            <tr>
+	                <th>취미</th>
+	                <td>
+	                    <label for=""><input type="checkbox" name="m_hobby" value="ski">스키</label>
+	                    <label for=""><input type="checkbox" name="m_hobby" value="book">독서</label>
+	                    <label for=""><input type="checkbox" name="m_hobby" value="cook">요리</label>
+	                    <label for=""><input type="checkbox" name="m_hobby" value="travel">여행</label>
+	                </td>
+	            </tr>
+	            <tr>
+	                <th>지역</th>
+	                <td>
+	                    <select name="m_locale" id="">
+	                        <option value="seoul">서울</option>
+	                        <option value="gyunggi">경기도</option>
+	                        <option value="etc">그외</option>
+	                    </select>
+	                </td>
+	            </tr>
+	        </tbody>
+	    </table>
+	    
+	    <button type="submit">가입</button>
+	</form>
+</body>
+
+</html>
