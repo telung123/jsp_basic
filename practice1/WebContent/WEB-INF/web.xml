@@ -19,6 +19,24 @@
   	<url-pattern>/SE</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>servletDataEx</servlet-name>
+  	<servlet-class>com.servletdata.ServletParameterEx</servlet-class>
+  	<init-param>
+  		<param-name>adminId</param-name>
+  		<param-value>Admin12</param-value>
+  	</init-param>  	
+  	<init-param>
+  		<param-name>adminPw</param-name>
+  		<param-value>12345</param-value>
+  	</init-param>
+  	
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>servletDataEx</servlet-name>
+  	<url-pattern>/servletDataEx</url-pattern>
+  </servlet-mapping>
+  
   
   <!-- servlet - jsp mapping 
   	url-pattern 에 .jsp 가 들어가고,
